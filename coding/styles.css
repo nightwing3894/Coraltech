@@ -1,0 +1,316 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #d9dad7;
+    background-color: #3e4a61;
+opacity: 1;
+background-image: radial-gradient(#f17456 1.1500000000000001px, #3e4a61 1.1500000000000001px);
+background-size: 23px 23px;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* Header */
+header {
+    background: #1a2639;
+    color: #d9dad7;
+    padding: 20px 0;
+}
+
+header h1 {
+    float: left;
+    margin-left: 20px;
+}
+
+nav {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #d9dad7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Clear floats */
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    color: #d9dad7;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background: #e8491d;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background: #cf3e14;
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    position: relative;
+}
+
+section h2::after {
+    content: "";
+    width: 100px;
+    height: 4px;
+    background: #e8491d;
+    margin: 10px auto 0;
+    display: block;
+}
+
+/* About Section */
+.about p {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+.misiune{
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+
+/* Team Section */
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.member {
+    background: #f4f4f4;
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.memberspecial {
+    background: #f4f4f4;
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 475px;
+}
+
+.member img {
+    width: 100%;
+    border-radius: 50%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.member h3 {
+    margin: 15px 0 5px;
+}
+
+.member p {
+    color: #9f9f9f;
+}
+
+.Hh {
+    color: #858484;
+}
+
+/* Projects Section */
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    background: #f4f4f4;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.project h3 {
+    margin: 15px 0 10px;
+}
+
+.project p {
+    color: #555;
+}
+
+/* Sponsors Section */
+.sponsor-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sponsor-logos img {
+    margin: 10px;
+    width: 150px;
+    height: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.sponsor-logos img:hover {
+    opacity: 1;
+}
+
+/* Contact Section */
+.contact form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact .btn {
+    display: block;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.contact .btn:hover {
+    background: #1a2639;
+}
+
+/* Footer */
+footer {
+    background: #1a2639;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .team-members,
+    .project-list,
+    .sponsor-logos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member,
+    .project {
+        width: 80%;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+}
+
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    width: 150px; /* Ajustează dimensiunea logo-ului */
+    margin-right: 1px; /* Spațiu între imagine și titlu */
+    margin-left: 10px;
+}
